@@ -15,19 +15,16 @@ h1 {
     
 }
 
-
 nav ul {
     display: flex;
     column-gap: 40px;
     align-items: center;
     font-family: Montserrat;
-
  }
  
 li {
     list-style: none;
     font-size: 15px;
-    
  }
 
 .jumbotron {
@@ -36,7 +33,6 @@ li {
     padding: 100px 0;
     flex-direction: column;
     color:#404146;
-
 }
 
 h2 {
@@ -107,26 +103,27 @@ p {
 .project .list {
     display: flex;
     margin: 0 auto;
-    column-gap: 70px;
+    column-gap: 10px;
     justify-content: space-evenly;
 }
 .card p {
     font-size: 15px;
     max-width: 300px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .box-shadow {
     filter:drop-shadow(5px 5px 10px #b6b6b6c3);
     border-radius: 2px;
 }
-#myPopup {
+.card #myPopup {
+    z-index: 1;
+}
+.card .popup{
     display: none;
     position: fixed;
 	left: 0;
 	top: 0;
-	padding-top: 100px;
-	width: 100%;
-	height: 100%;
+	padding-top: 10px;
 	background-color: rgba(255, 255, 255, 0);
 }
 #modalContent {
@@ -134,7 +131,6 @@ p {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    width: 60%;
     justify-content: center;
  }
 #modalContent span p {
@@ -178,7 +174,9 @@ form {
     row-gap: 25px;
     font-family: "montserrat";
 }
-
+#myPopup1 .card p {
+    max-width: 1000px;
+}
 input, textarea {
     padding: 10px;
     color: #f4f4f4;
