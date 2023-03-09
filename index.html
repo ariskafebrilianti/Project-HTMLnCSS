@@ -49,20 +49,50 @@
     <h5>Proyek Contoh</h5>
     <div class="list">
         <div class="card">
-            <img class="box-shadow"
-      src="img/Proyek1.png" width="300"/>
-            <p>Membuat NDWI menggunakan Google Earth Engine</p>
+            <button id="openModalButton" >
+                <img class="box-shadow" src="img/Proyek1.png" width="300"/>
+                <p>Google Earth Engine</p>
+            </button>
+            <div id="myPopup">
+                <div id="modalContent">
+                    <span id="closeModalIcon">&times;</span>
+						<h5>Membuat NDWI menggunakan Google Earth Engine</h5>
+                        <img src="img/Proyek1.png" width="600">
+	                    <p>Dalam proyek ini menggunakan Citra Landst 8. Pembuatan NDWI ini 
+                            digunakan untuk mengukur tingkat kebasahan dari suatu daerah pada 
+                            musim hujan dan musim kemarau.</p>
+                </div>
+            </div>
         </div>
         <div class="card">
-            <img class="box-shadow"
-            src="img/Proyek2.png" width="300"/>
-            <p>Web Map Persebaran MRT dan KRL di Jakarta di Jawa Timur</p>
-        </div>
-        <div class="card">
-            <img class="box-shadow"
-            src="img/Proyek3.png" width="300"/>
+            <button id="openModalButton">
+                <img class="box-shadow" src="img/Proyek2.png" width="300"/>
+                <p>Web Map Persebaran MRT dan KRL</p>
+            </button>
+            <div id="myPopup">
+                <div id="modalContent">
+                    <span id="closeModalIcon">&times;</span>
+						<h5>Web Map Persebaran MRT dan KRL</h5>
+                        <img src="img/Proyek2.png" width="600">
+	                    <p>Pembuatan Proyek ini menggunakan Web GIS yang disetting dari aplikasi Quantum GIS.
+                            Titik-titik yang dibuat merupakan lokasi stasiun MRT (Mass Rapid Transit) dan 
+                            KRL (Kereta Rel Listrik) di Jakarta Selatan dan Jakarta Timur.</p>
+                </div>
+    </div>
+    <div class="card">
+        <button id="openModalButton">
+            <img class="box-shadow" src="img/Proyek3.png" width="300"/>
             <p>Persebaran Hutan Mangrove</p>
-        </div>
+        </button>
+        <div id="myPopup">
+            <div id="modalContent">
+                <span id="closeModalIcon">&times;</span>
+                    <h5>Membuat NDWI menggunakan Google Earth Engine</h5>
+                    <img src="img/Proyek3.png" width="600">
+                    <p>Dalam proyek ini menggunakan Citra Landst 8. Pembuatan NDWI ini 
+                        digunakan untuk mengukur tingkat kebasahan dari suatu daerah pada 
+                        musim hujan dan musim kemarau.</p>
+            </div>
     </div>
 </section>
 <section class="contact">
@@ -82,5 +112,6 @@
         <li>Hubungi Saya</li>
     </ul>
 </footer>   
+<script src="myportfolio.js"></script>
 </body>
 </html>
