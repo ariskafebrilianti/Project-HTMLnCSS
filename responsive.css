@@ -77,5 +77,15 @@
     .box-shadow {
         width: 450px;
     }
-    
+ 
+    .prev,
+    .next {
+  position: absolute;
+  left: 0%;
+  user-select: none;
+}
+
+.next {
+  right: -90%;
+}
 }

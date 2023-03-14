@@ -118,7 +118,7 @@ section .list .card .box-shadow {
   left: 25%;
   cursor: pointer;
   user-select: none;
-  z-index: 1;
+  fill: #404146;
 }
 
 .next {
@@ -176,16 +176,16 @@ section .list .card .box-shadow {
 .card .popup{
     display: none;
     position: fixed;
-	left: 0;
 	top: 0;
 	padding-top: 10px;
 	background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+
 }
 section a {
     color: black;
-    z-index: 1;
 }
-#modalContent {
+.content {
     background-color: #fefefe;
     padding: 5px;
     display: inline-block;
@@ -193,13 +193,15 @@ section a {
     height: 100%;
     vertical-align: middle;
     align-content: center;
-    margin-left: 25px;;
+    margin: 20px auto;
  }
-#modalContent span p {
+.content span p {
     color:#404146;
     width: fit-content;
 }
-
+.close {
+    font-size: 20px;
+}
 .popup p {
     font-family: montserrat;
     max-width: 800px;
@@ -212,12 +214,12 @@ section a {
 .card button {
     background-color: #aaaaaa00;
 }
-    #closeModalIcon {
+    .close {
     color: #aaaaaa;
     float: right;
     }
-    #closeModalIcon:hover,
-    #closeModalIcon:focus {
+    .close:hover:hover,
+    .close:focus:focus {
     color: #000;
     cursor: pointer;
     }
