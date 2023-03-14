@@ -69,10 +69,10 @@
         flex-direction: column;
                
     }
-    .list p {
+    .project .list p {
         margin: 10px auto;
-        font-size: 18px;
-       
+        font-size: 15px;
+        font-family: montserrat;      
     }
     .box-shadow {
         width: 450px;
